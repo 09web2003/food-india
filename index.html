@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>healty eat</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="stylesheet"
+            media="screen and (max-width:500px)"
+            href="css/phone .css"
+        />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <style>
+            #logo {
+                height: 70px;
+                width: 70px;
+                border-radius: 50%;
+                padding: 3px 4px 4px 3px;
+            }
+            .navbar {
+                display: flex;
+                align-items: center;
+                background-color: rgb(255, 196, 0);
+            }
+            .navbar::before {
+                contain: "";
+                background-color: rgb(255, 196, 0);
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+                opacity: 0.4;
+            }
+            ul {
+                display: flex;
+                margin: 0 auto;
+                list-style: none;
+                font-size: 22px;
+            }
+            ul li a {
+                padding: 10px;
+                text-decoration: none;
+                color: black;
+                justify-items: center;
+            }
+            ul li a:hover {
+                color: red;
+                background-color: white;
+                border-radius: 15px;
+            }
+            .sea {
+                padding: 10px;
+                margin: 15px;
+                border: none;
+                border-radius: 10px;
+            }
+            h3 {
+                padding-top: 35px;
+            }
+
+            .main {
+                min-height: calc(100vh - 70px);
+                background: url("img/b1.jpg") center / cover no-repeat;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                color: black;
+                font-size: larger;
+            }
+            h1 {
+                text-align: center;
+            }
+            #service {
+                display: flex;
+                display: grid;
+                column-gap: 10px;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin: 10px;
+            }
+            #service .box {
+                border: 5px solid rgb(255, 196, 0);
+                border-radius: 8px;
+                box-shadow: 2px 3px rgb(255, 196, 0);
+            }
+            #service .box img {
+                height: 300px;
+                width: 100%;
+            }
+            .article {
+                display: flex;
+                color: #000;
+            }
+            .article img {
+                height: 300px;
+                width: 400px;
+            }
+            .article h2 {
+                margin: 4px;
+            }
+            #contact h1 {
+                padding: 6pxpx;
+                font-size: 45px;
+            }
+            footer {
+                background-color: black;
+                color: white;
+                padding: 15px;
+                height: 55px;
+            }
+            footer .center {
+                text-align: center;
+            }
+            #btn {
+                background-color: black;
+                color: white;
+                border-radius: 10px;
+                margin: 40px;
+                cursor: pointer;
+                margin-bottom: 4px;
+                width: 150px;
+                height: 40px;
+            }
+            #btn :hover{
+                color: rgb(189, 113, 113);
+            }
+            #contact-box {
+                border: 4px solid black;
+                margin: 200px;
+                height: 200px;
+                padding: 30px;
+                text-align: center;
+                background-color: rgb(205, 151, 151);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navbar Start -->
+        <div class="navbar">
+            <img id="logo" src="img/extra.jpg" />
+            <h1>Healty</h1>
+            <h3><sub>Eat</sub></h3>
+
+            <ul>
+                <li><a href="#"> home </a></li>
+                <li><a href="#"> about us</a></li>
+                <li><a href="#"> contact us</a></li>
+                <li><a href="#"> service us</a></li>
+            </ul>
+
+            <div>
+                <input
+                    class="sea"
+                    type="search"
+                    placeholder="search food"
+                    autofocus
+                />
+            </div>
+        </div>
+        <!-- Navbar Ends -->
+
+        <!-- Carousel Start -->
+        <div class="main">
+            <h1><marquee>WELCOME OUR HEALTHY FOOD</marquee></h1>
+        </div>
+        <section class="service-container">
+            <h1 class="h-primary center" data-aos="flip-down">Our Service</h1>
+
+            <div id="service">
+                <div class="box" data-aos="flip-left">
+                    <img src="img/order.jpg" />
+                    <h2 class="h-secondary center">Food Ordering</h2>
+                    <p>Taste that best, its on time</p>
+                </div>
+                <div class="box" data-aos="flip-left">
+                    <img src="img/service.jpg" />
+                    <h2 class="h-secondary center">Test Delicious Food</h2>
+                    <p>Taste that best, its on time</p>
+                </div>
+                <div class="box" data-aos="flip-left">
+                    <img src="img/extra.jpg" />
+                    <h2 class="h-secondary center">Food Ordering</h2>
+                    <p>Taste that best, its on time</p>
+                </div>
+            </div>
+        </section>
+        <div class="article">
+            <h2>
+                Today, fast food makes up 11 percent of adult energy intake in
+                the United States and has been implicated in rising rates of
+                obesity, diabetes, and heart disease. A new study looking back
+                at fast food’s evolution over the last 30 years could help
+                explain why these health issues have become more common. In a
+                paper published in the Journal of the Academy of Nutrition and
+                Dietetics, researchers from Boston University and Tufts
+                University report that meals have packed on more calories and
+                salt over the years.Today, fast food makes up 11 percent of
+                adult energy intake in the United States and has been implicated
+                in rising rates of obesity, diabetes, and heart disease. A new
+                study looking back at fast food’s evolution over the last 30
+                years could help explain why these health issues have become
+                more common. In a paper published in the Journal of the Academy
+                of Nutrition and Dietetics, researchers from Boston University
+                and Tufts University report that meals have packed on more
+                calories and salt over the years.
+            </h2>
+            <img src="img/b1.jpg" />
+        </div>
+        <section id="contact">
+            <h1 class="h-primary contact">Contact Us</h1>
+            <div id="contact-box">
+                <form action="">
+                    <div class="form-group">
+                        <lebal for="name">Name:</lebal>
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Enter Your Name"
+                        /><br /><br />
+                        <lebal for="name">Email:</lebal>
+                        <input
+                            type="text"
+                            name="email"
+                            placeholder="Enter Your Email"
+                        /><br /><br />
+                        <lebal for="name">Address:</lebal>
+                        <input
+                            type="text"
+                            name="address"
+                            placeholder="Enter Your Address"
+                        /><br /><br />
+                        <lebal for="name">Number:</lebal>
+                        <input
+                            type="number"
+                            name="number"
+                            placeholder="Enter Your Number"
+                        /><br /><br />
+                        <input id="btn" type="button" value="order now" />
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="center">
+                copyright &copy; <a href="#">www.heathyfoom.com </a
+                ><myonlimail class="co"></myonlimail>
+            </div>
+        </footer>
+    </body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1200,
+    });
+</script>
+</html>
